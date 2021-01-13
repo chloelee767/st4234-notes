@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[a4paper, margin=1cm, landscape]{geometry}
+
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\setlength \parindent{0pt}
+
+% \newcommand{E}{\mathbb{E}}
+\begin{document}
+\begin{multicols*}{2}
+
+\section{Beta Distribution}
+\label{sec:beta-dist}
+
+\subsection{Notation}
+
+$Beta(\alpha, \beta)$ where $\alpha,\beta > 0$ are the shape parameters.
+
+\subsection{Denstiy Function}
+
+$f(x) = \frac{x^{\alpha - 1} (1 - x)^{\beta - 1}}{B(\alpha,\beta)}$ where $B(\alpha, \beta) = \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha + \beta)}$.
+
+\subsection{Mean and Variance}
+
+$E[X] = \frac{\alpha}{\alpha + \beta}$
+
+$Var[X] = \frac{\alpha \beta}{(\alpha + \beta)^2(\alpha + \beta + 1)}$
+
+\section{Uniform Distribution}
+\label{sec:uniform-dist}
+
+\subsection{Notation}
+
+$U(a,b)$ where $-\infty < a < b < \infty$.
+
+\subsection{Density Function}
+
+$f(x) = \frac{1}{b - a}$
+
+\subsection{Mean and Variance}
+
+$E[X] = \frac{1}{2}(a + b)$
+
+$Var[X] = \frac{1}{12}(b - a)^2$
+
+\end{multicols*}
+\end{document}
